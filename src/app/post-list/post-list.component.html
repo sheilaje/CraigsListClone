@@ -4,6 +4,11 @@
     <img src="assets/images/{{post.image}}">
     <h2>{{ post.title }}</h2>
     <p>{{ post.cost | currency }}</p>
-    <button (click)="showPostDetails(post)">View</button>
+    <button (click)="showPostDetails(post)" class="btn btn-primary">View</button>
+    <button (click) = "editPost(post)" class="btn btn-primary">Edit</button>
   </div>
+</div>
+
+<div *ngIf="displayForm">
+  <app-editpost [currentPost]="currentPost" (clickSender)="doneEditing($event)"></app-editpost>
 </div>

@@ -7,7 +7,8 @@ import { CategoryComponent } from './category/category.component';
 import { AppComponent } from './app.component';
 import { CategoryFilter } from './categoryFilter.pipe';
 import { PostListComponent } from './post-list/post-list.component';
-import { PostDetailsComponent } from './post-details/post-details.component'
+import { PostDetailsComponent } from './post-details/post-details.component';
+import { EditpostComponent } from './editpost/editpost.component'
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { PostDetailsComponent } from './post-details/post-details.component'
     CategoryComponent,
     CategoryFilter,
     PostListComponent,
-    PostDetailsComponent
+    PostDetailsComponent,
+    EditpostComponent
   ],
   imports: [
     BrowserModule,
